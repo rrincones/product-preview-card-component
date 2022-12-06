@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/product-preview-card-component-eTtZbHvEwz)
 - Live Site URL: [GitHub Pages Live Site](https://rrincones.github.io/product-preview-card-component/)
 
 ## My process
