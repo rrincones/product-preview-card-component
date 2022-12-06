@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Live](https://rrincones.github.io/product-preview-card-component/)
+- Live Site URL: [GitHub Pages Live Site](https://rrincones.github.io/product-preview-card-component/)
 
 ## My process
 
