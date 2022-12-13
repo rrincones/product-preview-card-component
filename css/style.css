@@ -103,5 +103,10 @@ button:focus, button:hover {
     main {
         width: 90%;
         border-radius: 0.75rem;
-    }  
+    } 
+    
+    img /*doesn't work*/{
+        width: 100%;
+        float: none;
+    }
 }
