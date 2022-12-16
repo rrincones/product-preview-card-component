@@ -36,8 +36,6 @@ Users should be able to:
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/product-preview-card-component-eTtZbHvEwz)
 - Live Site URL: [GitHub Pages Live Site](https://rrincones.github.io/product-preview-card-component/)
 
-## My process
-
 ### Built with
 
 - Semantic HTML5 markup
@@ -46,33 +44,37 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+I primarily learned how to design a responsive page by using the picture element and a CSS at-rule. Specifically, I learned the syntax of at-rules, that they begin with an @ followed by an identifier, and how to implement a media query within the @media at-rule. Additionally, I learned how to select images in CSS within the <picture> element. Selecting just the <img> affects all the images inside, but nesting that rule inside the appropriate @media rule allows for the selection of a specific image. And if you want to select one image from among several <picture> elements, and that load together, you can use a class or id selector. More importantly, I discovered that the picture element is a good solution to give the browser several image formats and sizes to choose from that will fit the device or browser being used. Not all browsers support all formats and smaller images need to be used on smaller screen sizes. 
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<picture>
+  <source media="(max-width: 50rem)" srcset="images/image-product-mobile.jpg">
+  <img class="pictures" src="images/image-product-desktop.jpg" alt="Gabrielle CHANEL perfume bottle">
+</picture>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+@media (max-width: 50rem) {
+   img {
+     float: none;
+     border-radius: 0.75rem 0.75rem 0 0;
+     width: 100%;
+   }
+
+   main {
+    width: 80%;
+    margin: 2rem auto 2rem;
+   }
+
+   .padding {
+    width: 100%;
+    display: block;
+    padding: 2rem;
+    }
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+This is the first project in which I made a responsive design for mobile devices. My aim is to hone these skills further from one project to the next and to apply the tips I received from helpful developers within the Frontend Mentor Slack community. I know now that I should generally avoid setting exact heights or any height at all on container elements as the content needs to be able to grow and adapt to the various screen sizes without overflow and such. Exact dimensions means no room for adaptation, so I'll think more about not using those moving forward. I'll also think more about accommodating as many users as possible and their different ways of browsing the Web. Some things I didn't consider were how a user browsing on a mobile device in landscape view or changing the base font size might affect my design. I must design for everyone as best I can and keep these things in mind. 
 
 ### Useful resources
 
