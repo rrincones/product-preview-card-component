@@ -16,8 +16,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -88,3 +86,4 @@ This is the first project in which I made a responsive design for mobile devices
 - Frontend Mentor - [@rrincones](https://www.frontendmentor.io/profile/rrincones)
 
 ## Acknowledgments
+Special thanks to Grace and Alex Marshall, both of whom took the time to answer my question regarding this project on Slack. 
