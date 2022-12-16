@@ -48,7 +48,7 @@ I primarily learned how to design a responsive page by using the picture element
   <source media="(max-width: 50rem)" srcset="images/image-product-mobile.jpg">
   <img class="pictures" src="images/image-product-desktop.jpg" alt="Gabrielle CHANEL perfume bottle">
 </picture>
-```
+`
 ```css
 @media (max-width: 50rem) {
    img {
