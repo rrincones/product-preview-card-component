@@ -80,6 +80,12 @@ button:focus, button:hover {
     letter-spacing: 0.25rem;
 }
 
+.fraunces {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
 .attribution {
     position: absolute;
     bottom: 0;
@@ -93,20 +99,21 @@ button:focus, button:hover {
     color: hsl(228, 45%, 44%);
 }
 
-.fraunces {
-    font-family: 'Fraunces', serif;
-    font-weight: 700;
-    font-size: 2rem;
-}
+@media (max-width: 50rem) {
+   img {
+     float: none;
+     border-radius: 0.75rem 0.75rem 0 0;
+     width: 100%;
+   }
 
-@media (max-width: 500px) {
-    main {
-        width: 90%;
-        border-radius: 0.75rem;
-    } 
-    
-    img /*doesn't work*/{
-        width: 100%;
-        float: none;
+   main {
+    width: 80%;
+    margin: 2rem auto 2rem;
+   }
+
+   .padding {
+    width: 100%;
+    display: block;
+    padding: 2rem;
     }
 }
