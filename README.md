@@ -43,12 +43,12 @@ Users should be able to:
 ### What I learned
 
 I primarily learned how to design a responsive page by using the picture element and a CSS at-rule. Specifically, I learned the syntax of at-rules, that they begin with an @ followed by an identifier, and how to implement a media query within the @media at-rule. Additionally, I learned how to select images in CSS within the <picture> element. Selecting just the <img> affects all the images inside, but nesting that rule inside the appropriate @media rule allows for the selection of a specific image. And if you want to select one image from among several <picture> elements, and that load together, you can use a class or id selector. More importantly, I discovered that the picture element is a good solution to give the browser several image formats and sizes to choose from that will fit the device or browser being used. Not all browsers support all formats and smaller images need to be used on smaller screen sizes. 
-`html
+```html
 <picture>
   <source media="(max-width: 50rem)" srcset="images/image-product-mobile.jpg">
   <img class="pictures" src="images/image-product-desktop.jpg" alt="Gabrielle CHANEL perfume bottle">
 </picture>
-`
+```
 ```css
 @media (max-width: 50rem) {
    img {
